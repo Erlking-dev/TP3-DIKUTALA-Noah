@@ -1,0 +1,62 @@
+*{ box-sizing: border-box;}
+
+
+/* Typographies / Couleurs (exemples : titres, paragraphes, liens, etc.)
+========================================================================== */
+
+body{
+	background-color: white;
+}
+
+/* Mise en page (positionnement)
+========================================================================== */
+
+.container{
+	width: 90%;
+	max-width: 1200px;
+	margin: 0 auto;
+}
+
+
+/* Header / Navigations / Footer 
+========================================================================== */
+
+header {
+    background-color: #222222;
+
+	div {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+		padding: 5px;
+
+        li {
+            display: inline-block;
+            align-items: center;
+            margin: 5px;
+			font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+
+			a {
+				color: aliceblue;
+				text-decoration: none;
+			}
+        }
+
+		img {
+			width: 250px;
+		}
+
+    }
+}
+/* Composantes générales (exemples : section, cartes, tableaux, etc.)
+========================================================================== */
+
+
+
+/* Formulaires
+========================================================================== */
+
+
+
+/* Règles spécifiques aux pages
+========================================================================== */
