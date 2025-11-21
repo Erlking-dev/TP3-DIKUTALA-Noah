@@ -8,6 +8,29 @@ body{
 	background-color: white;
 }
 
+.telephone{
+	background-color: #EEECEF;
+	color: #222222;
+	padding: 10px;
+	text-decoration:none;
+}
+
+.bouton {
+	background-color: #222222;
+	color: #EEECEF;
+	padding: 15px;
+	margin: 10px;
+	width: fit-content;
+	    
+	a {
+		color: #EEECEF;
+	}
+}
+
+a:link {
+    text-decoration: none;	
+}
+
 /* Mise en page (positionnement)
 ========================================================================== */
 
@@ -48,15 +71,81 @@ header {
 
     }
 }
+
+.black-footer {
+	background-color: #222222;
+    padding: 10px;
+    color:#EEECEF;
+
+    div {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+		font-size: large;
+		font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    }
+}
+
+.white-footer {
+    padding: 10px;
+
+    div {
+		display: flex;
+		justify-content:center;
+		font-size: large;
+    }
+}
+
 /* Composantes générales (exemples : section, cartes, tableaux, etc.)
 ========================================================================== */
+.grid-4col {
+    display: grid;
+    grid-template-columns: 1fr 2fr 1fr 3fr;
+	gap: 5px;
+}
 
+.grid6{
+    grid-column: 3 / span 2;
+    grid-row: 1 / span 2;
+}
 
+.grid3 {
+	grid-row: 3;
+    grid-column: 3;
+}
+
+.grid4 {
+	grid-row: 3;
+    grid-column: 4;
+}
+
+.fieldset {
+	grid-column: 1 / span 4;
+    grid-row:  2 / span 3;
+}
+
+.gridimg {
+	padding: 0;
+    list-style-type: none;
+}
 
 /* Formulaires
 ========================================================================== */
 
+.connexion {
+    background-color: darkgrey;
+	font-size: large;
+	width: 50%;
+}
 
+.champ-large {
+	display: block;
+	width: 100%;
+}
+
+fieldset section {
+	margin-bottom: 200px;
+}
 
 /* Règles spécifiques aux pages
 ========================================================================== */
