@@ -37,9 +37,12 @@ a:link {
 	background-color: #222222;
 	color: #EEECEF;
 	padding: 30px;
-	font-size:x-large;
+	font-size: xx-large;
 	font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
 }
+
+
+
 
 /* Mise en page (positionnement)
 ========================================================================== */
@@ -50,8 +53,14 @@ a:link {
 	margin: 0 auto;
 }
 
-.titre-page {
+.title-page {
+	font-size: x-large;
 	display: flex;
+	align-items: center;
+
+	p {
+		font-size:smaller;
+	}
 }
 
 .employee-txt {
@@ -128,6 +137,12 @@ header {
 	grid-template-columns: 1fr 1fr 1fr;
 }
 
+.grid-2col {
+	display: grid;
+	grid-template-columns: 1fr 2fr;
+	gap: 5px;
+}
+
 .grid6 {
 	grid-column: 3 / span 2;
 	grid-row: 1 / span 2;
@@ -172,3 +187,29 @@ fieldset section {
 
 /* Règles spécifiques aux pages
 ========================================================================== */
+
+.profilepic {
+	width: 400px;
+}
+
+.g-box {
+	background-color: lightgray;
+	padding: 10px;
+
+	h2 {
+		font-weight: 700;
+		font-size: xx-large;
+		font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif
+	}
+
+	section {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	font-size: larger;
+	border-bottom-width: medium;
+	border-bottom-style: solid;
+	border-bottom-color: #222222;
+	}
+}
+	
