@@ -3,39 +3,104 @@
 
 <head>
     <meta charset="utf-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<title>Gabarit de site web</title>
-	<link rel="stylesheet" href="css/normalize.css">
-	<link rel="stylesheet" href="css/style.css">
-	<link rel="icon" href="lil-logo.ico">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gabarit de site web</title>
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="icon" href="lil-logo.ico">
 </head>
 
 <body>
     <header>
-		<div class="container">
-			<a href="index.html"><img src="img/equigest-logo.png" alt="Logo compagnie"></a>
-			<nav>
-				<ul>
-					<li><a href="employee.html">Employés</a>
-					<li><a href="cree-employee.html">Crée un employé</a></li>
-					<li><a href="fiche.html">Mon compte</a> </li>
-				</ul>
-			</nav>
-		</div>
-	</header>
+        <div class="container">
+            <a href="index.html"><img src="img/equigest-logo.png" alt="Logo compagnie"></a>
+            <nav>
+                <ul>
+                    <li><a href="employee.html">Employés</a>
+                    <li><a href="cree-employee.html">Crée un employé</a></li>
+                    <li><a href="fiche.html">Mon compte</a> </li>
+                </ul>
+            </nav>
+        </div>
+    </header>
 
     <main class="container">
         <section class="title-page">
             <h1>Création d'un employé</h1>
         </section>
 
-        
         <section>
-            <h2 class="black-box">Information nécessaire</h2>
-        </section>
+            <section>
+                <h2 class="black-box">Information nécessaire</h2>
+            </section>
 
+            <ul class="grid-form gridimg">
+                <li class="form">
+                    <form action="https://nrichardgarneau.pythonanywhere.com/" >
+
+                        <label for="txt-nom">Votre prénom et nom :</label>
+                        <input type="text" id="txt-nom" name="txt-nom" class="champ-large">
+
+
+
+                        <label for="txt-telephone">Votre numéro de téléphone :</label>
+                        <input type="text" id="txt-telephone" name="txt-telephone" class="champ-large">
+
+
+                        <label for="txt-courriel">Votre adresse courriel :</label>
+                        <input type="text" id="txt-courriel" name="txt-courriel" class="champ-large">
+
+                        <div>
+                            <input type="radio" name="rdo-communication" value="communication">
+                            <label for="txt-communication">Téléphone</label>
+                        </div>
+
+                        <div>
+                            <input type="radio" name="rdo-communication" value="communication">
+                            <label for="txt-communication">Texto</label>
+                        </div>
+
+                        <div>
+                            <input type="radio" name="rdo-communication" value="communication">
+                            <label for="txt-communication">Courriel</label>
+                        </div>
+                    </form>
+
+                <li class="form">
+                    <form action="https://nrichardgarneau.pythonanywhere.com/">
+                        <label for="txt-date">Date d'embauche</label>
+                        <input type="date" name="date-embauche" class="champ-large">
+
+                        <label for="sel-poste">Type de poste: </label>
+                        <select name="sel-poste" id="sel-aliment" class="champ-large">
+                            <option value="Direction">Direction</option>
+                            <option value="Administration">Administration</option>
+                            <option value="Marketing">Marketing </option>
+                            <option value="Ressources"> Ressources humaines</option>
+                            <option value="Gestion"> Gestion de projet</option>
+                            <option value="Vente">Vente</option>
+                            <option value="Finance">Finance</option>
+                            <option value="Manutention">Manutention</option>
+                            <option value="informatique">Informatique</option>
+                            <option value="Design">Design</option>
+                            <option value="Ingénierie">Ingénierie</option>
+                            <option value="Journalier">Journalier</option>
+                        </select>
+
+                        <input type="checkbox" name="ckb-arret">
+                        <label for="ckb-arret">En arrêt de travail </label>
+
+                        <label for="txt-commentaire" class="champ-large">Avez-vous un commentaire? </label>
+                        <input type="text" name="txt-commentaire" maxlength="400" class="champ-large">
+
+                        <input type="reset" value="Vider le formulaire">
+                        <input type="submit" value="Soumettre">
+                    </form>
+                </li>
+            </ul>
+        </section>
     </main>
-    
+
     <footer>
         <section class="black-footer">
             <div class="container">
@@ -52,4 +117,5 @@
         </section>
     </footer>
 </body>
+
 </html>
